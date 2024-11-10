@@ -13,4 +13,13 @@ class Smoothie {
         description += `Sweetness: ${this.sweetness} <br>`;
         return description;
     }
-}
+}document.getElementById("orderButton").addEventListener("click", function() {
+    const size = document.getElementById("size").value;
+    const base = document.getElementById("base").value;
+    const sweetness = document.getElementById("sweetness").value;
+    const ingredients = Array.from(document.querySelectorAll("input[name='ingredient']:checked"))
+                             .map(ingredient => ingredient.value);
+
+    const smoothie = new Smoothie(size, base, ingredients, sweetness);
+});
+
