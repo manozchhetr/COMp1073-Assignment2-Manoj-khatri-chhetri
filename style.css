@@ -1,3 +1,4 @@
+/* Basic reset and styling */
 * {
     margin: 0;
     padding: 0;
@@ -16,7 +17,15 @@ body {
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 1em;
+    color: #4CAF50;
+}
+
 form label {
     display: block;
     margin-top: 10px;
@@ -28,6 +37,7 @@ form select, form input[type="checkbox"] {
     padding: 5px;
     width: 100%;
 }
+
 button {
     display: block;
     width: 100%;
@@ -43,4 +53,18 @@ button {
 
 button:hover {
     background-color: #45a049;
+}
+
+.summary {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e8f5e9;
+    border: 1px solid #4CAF50;
+    border-radius: 5px;
+    display: none;
+}
+
+#orderDetails {
+    font-size: 1.1em;
+    line-height: 1.6;
 }
