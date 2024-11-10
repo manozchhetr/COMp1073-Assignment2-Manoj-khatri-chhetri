@@ -21,5 +21,8 @@ class Smoothie {
                              .map(ingredient => ingredient.value);
 
     const smoothie = new Smoothie(size, base, ingredients, sweetness);
+    document.getElementById("orderDetails").innerHTML = smoothie.getDescription();
+    document.getElementById("orderSummary").style.display = "block";
+    
 });
 
