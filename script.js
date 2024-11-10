@@ -29,7 +29,7 @@ document.getElementById("orderButton").addEventListener("click", function() {
     // Create a new smoothie object
     const smoothie = new Smoothie(size, base, ingredients, sweetness);
 
-    // Display the smoothie description
+    // Display the smoothie description in the order summary section
     document.getElementById("orderDetails").innerHTML = smoothie.getDescription();
     document.getElementById("orderSummary").style.display = "block";
 });
