@@ -9,49 +9,57 @@
 <body>
     <div class="container">
         <h1>Order Your Custom Smoothie</h1>
-        <form id="smoothieForm"></form>
+        <form id="smoothieForm">
+            <label for="size">Choose Size:</label>
+            <select id="size" name="size">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+                <option value="extra-large">Extra Large</option>
+            </select>
+
+            <label for="base">Choose Base:</label>
+            <select id="base" name="base">
+                <option value="milk">Milk</option>
+                <option value="almond milk">Almond Milk</option>
+                <option value="soy milk">Soy Milk</option>
+                <option value="coconut milk">Coconut Milk</option>
+                <option value="cream">Cream</option>
+                <option value="water">Water</option>
+            </select>
+
+            <label for="ingredients">Select Ingredients:</label>
+            <div id="ingredients">
+                <input type="checkbox" name="ingredient" value="banana"> Banana<br>
+                <input type="checkbox" name="ingredient" value="strawberry"> Strawberry<br>
+                <input type="checkbox" name="ingredient" value="mango"> Mango<br>
+                <input type="checkbox" name="ingredient" value="blueberry"> Blueberry<br>
+                <input type="checkbox" name="ingredient" value="spinach"> Spinach<br>
+                <input type="checkbox" name="ingredient" value="protein powder"> Protein Powder<br>
+                <input type="checkbox" name="ingredient" value="chia seeds"> Chia Seeds<br>
+                <input type="checkbox" name="ingredient" value="peanut butter"> Peanut Butter<br>
+                <input type="checkbox" name="ingredient" value="avocado"> Avocado<br>
+                <input type="checkbox" name="ingredient" value="kale"> Kale<br>
+                <input type="checkbox" name="ingredient" value="pineapple"> Pineapple<br>
+                <input type="checkbox" name="ingredient" value="honey"> Honey
+            </div>
+
+            <label for="sweetness">Sweetness Level:</label>
+            <select id="sweetness" name="sweetness">
+                <option value="no sugar">No Sugar</option>
+                <option value="light">Light</option>
+                <option value="medium">Medium</option>
+                <option value="extra">Extra Sweet</option>
+            </select>
+
+            <button type="button" id="orderButton">Order Smoothie</button>
+        </form>
+
+        <div id="orderSummary" class="summary">
+            <h2>Your Smoothie Order</h2>
+            <p id="orderDetails"></p>
+        </div>
     </div>
     <script src="script.js"></script>
-    <form id="smoothieForm">
-        <label for="size">Choose Size:</label>
-        <select id="size" name="size">
-            <option value="small">Small</option>
-            <option value="medium">Medium</option>
-            <option value="large">Large</option>
-            <option value="extra-large">Extra Large</option>
-        </select>
-    
-        <label for="base">Choose Base:</label>
-        <select id="base" name="base">
-            <option value="milk">Milk</option>
-            <option value="almond milk">Almond Milk</option>
-            <option value="soy milk">Soy Milk</option>
-            <option value="coconut milk">Coconut Milk</option>
-            <option value="cream">Cream</option>
-            <option value="water">Water</option>
-        </select>
-        <label for="ingredients">Select Ingredients:</label>
-<div id="ingredients">
-    <input type="checkbox" name="ingredient" value="banana"> Banana<br>
-    <input type="checkbox" name="ingredient" value="strawberry"> Strawberry<br>
-    <!-- Add other ingredients similarly -->
-</div>
-
-<label for="sweetness">Sweetness Level:</label>
-<select id="sweetness" name="sweetness">
-    <option value="no sugar">No Sugar</option>
-    <option value="light">Light</option>
-    <option value="medium">Medium</option>
-    <option value="extra">Extra Sweet</option>
-</select>
-    </form>
-    <button type="button" id="orderButton">Order Smoothie</button>
-
-<div id="orderSummary" class="summary">
-    <h2>Your Smoothie Order</h2>
-    <p id="orderDetails"></p>
-</div>
-
-    
 </body>
 </html>
