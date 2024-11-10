@@ -17,3 +17,14 @@ body {
     background-color: #fff;
     border-radius: 10px;
 }
+form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form select, form input[type="checkbox"] {
+    margin-top: 5px;
+    padding: 5px;
+    width: 100%;
+}
